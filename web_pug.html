@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁設計 - HTML 模板語言 Pug</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>網頁設計 - HTML 模板語言 Pug</h1>
+        <h2>1. 認識 Pug</h2>
+        <p><a href="https://pugjs.org/api/getting-started.html" target="_blank">Pug</a>為一套 HTML 模板語言，提供<span class="question">精簡 HTML</span>的程式碼格式，原名為【Jade】。</p>
+        <h2>2. Pug 流程</h2>
+        <p>建立 Pug 檔案，利用模板撰寫 HTML</p>
+        <p>利用轉譯工具將 Pug 檔案轉回原本的 HTML</p>
+        <h2>3. Pug 安裝流程</h2>
+        <p>請先下載<a href="https://nodejs.org/en/" target="_blank">Node.js</a></p>
+        <p>安裝完成後回到 VS Code 開啟【終端機】( 快捷鍵 ctrl + ` )</p>
+        <p>安裝 Pug 輸入<span class="question">npm install pug -g</span></p>
+        <div class="picture">
+            <img src="gif/pug_install.gif" alt="安裝 pug jade">
+        </div>
+        <p>安裝 Pug Cli 輸入<span class="question">npm install pug-cli -g</span></p>
+        <div class="picture">
+            <img src="gif/pug_install_cli.gif" alt="安裝 pug cli jade">
+        </div>
+        <p>測試安裝有沒有完成輸入<span class="question">pug -V</span>(注意大小寫)</p>
+        <div class="picture">
+            <img src="gif/pug_version.gif" alt="pug jade 版本">
+        </div>
+        <h2>4. Pug 轉譯 HTML 語法</h2>
+        <p>將 Pug 轉譯 為 HTML：<span class="question">pug ./ -o ./ -w -P</span></p>
+        <p>./ -o ./ 的意思為<span class="question">將 ./ 根目錄的 Pug 轉譯到 ./ 根目錄</span></p>
+        <p>-w 的意思為<span class="question">即時編譯</span></p>
+        <p>-P 的意思為<span class="question">排版</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/pug_convert.gif" alt="pug jade 編譯">
+        </div>
+        <h2>5. Pug 語法</h2>
+        <h3>5-1 註解</h3>
+        <p>註解語法：<span class="question">//  註解</span></p>
+        <p>Pug 註解語法：<span class="question">//- 註解</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/pug_comments.gif" alt="pug jade 註解">
+        </div>
+        <h3>5-2 使用 HTML 5</h3>
+        <p>語法：<span class="question">doctype html</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/pug_html5.gif" alt="pug jade html5">
+        </div>
+        <h3>5-3 標籤與階層</h3>
+        <p>標籤語法：<span class="question">標籤名稱</span></p>
+        <p>階層語法：<span class="question">縮排 Tab</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/pug_tag_hierarchy.gif" alt="pug jade 標籤與階層">
+        </div>
+        <h3>5-4 內容與屬性</h3>
+        <p>內容語法：<span class="question">標籤 空格 內容</span></p>
+        <p>屬性語法：<span class="question">標籤(屬性="值")</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/pug_content_property.gif" alt="pug jade 內容與屬性">
+        </div>
+        <p>多重屬性：</p>
+        <div class="picture">
+            <img class="gif" src="gif/pug_content_property_both.gif" alt="pug jade 多重屬性">
+        </div>
+        <h3>5-5 多行內容與子標籤</h3>
+        <p>多行內容語法：<span class="question">|內容</span></p>
+        <p>子標籤語法：<span class="question">#[子標籤]</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/pug_childtag_line.gif" alt="pug jade 多行內容與子標籤">
+        </div>
+        <h3>5-6 變數</h3>
+        <p>宣告變數語法：<span class="question">- var 變數名稱 = "變數內容";</span></p>
+        <p>使用變數語法：<span class="question">標籤=變數名稱</span></p>
+        <p>在內容使用變數語法：<span class="question">標籤 #{變數名稱}</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/pug_variable.gif" alt="pug jade 變數">
+        </div>
+        <p>使用包含標籤的變數語法：<span class="question">標籤!=變數名稱</span></p>
+        <p>在內容使用包含標籤的變數語法：<span class="question">標籤 !{變數名稱}</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/pug_variable_tag.gif" alt="pug jade 變數">
+        </div>
+        <h3>5-7 Mixin 方法</h3>
+        <p>Mixin 語法<span class="question">mixin 混入名稱 內容</span></p>
+        <p>使用 Mixin 語法：<span class="question">+混入名稱</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/pug_mixin.gif" alt="pug jade 多行內容與子標籤">
+        </div>
+        <p>Mixin 參數語法<span class="question">mixin 混入名稱(參數) 內容</span></p>
+        <p>使用 Mixin 參數語法：<span class="question">+混入名稱(參數)</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/pug_mixin_argument.gif" alt="pug jade 多行內容與子標籤">
+        </div>
+        <h3>5-8 包含</h3>
+        <p>包含語法<span class="question">include 檔案名稱.副檔名</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/pug_include.gif" alt="pug jade 多行內容與子標籤">
+        </div>
+        <h2>練習</h2>
+        <p>此單元介紹了 Pug ，請參考<a href="#" target="_blank">網頁設計 作業 - HTML 模板與營 Pug</a>練習。</p>
+    </div>
+    <footer>KID &copy; 2019</footer>
+</body>
+
+</html>

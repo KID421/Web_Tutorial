@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁設計 - HTML 外掛 Emmet</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>網頁設計 - HTML 外掛 Emmet</h1>
+        <h2>1. 認識 Emmet</h2>
+        <p><a href="https://emmet.io/" target="_blank">Pug</a>是一套文字編輯器的外掛程式，提供<span class="question">快速開發 HTML、CSS</span>的程式碼格式。</p>
+        <h2>2. HTML 語法</h2>
+        <h3>2-1 標籤</h3>
+        <p>語法：<span class="question">標籤名稱 + Tab</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/tag.gif" alt="emmet 標籤">
+        </div>
+        <h3>2-2 標籤類別與識別</h3>
+        <p>語法：標籤名稱 + <span class="question">類別名稱</span> + Tab</p>
+        <p>語法：標籤名稱 + <span class="question">識別名稱</span> + Tab</p>
+        <p>注意：如果不寫標籤名稱預設為<span class="question">div</span>標籤</p>
+        <div class="picture">
+            <img class="gif" src="gif/tag_class_id.gif" alt="emmet 標籤類別與識別">
+        </div>
+        <h3>2-3 子標籤</h3>
+        <p>語法：標籤名稱 + <span class="question">></span> + 標籤名稱 + Tab</p>
+        <div class="picture">
+            <img class="gif" src="gif/child.gif" alt="emmet 子標籤">
+        </div>
+        <h3>2-4 乘法</h3>
+        <p>語法：標籤名稱 + <span class="question">* 數字</span> + Tab</p>
+        <div class="picture">
+            <img class="gif" src="gif/multiplication.gif" alt="emmet 乘法">
+        </div>
+        <h3>2-5 加法 - 兄弟姊妹</h3>
+        <p>語法：標籤名稱 + <span class="question">+</span> + 標籤名稱 + Tab</p>
+        <div class="picture">
+            <img class="gif" src="gif/sibling.gif" alt="emmet 加法 兄弟姊妹">
+        </div>
+        <h3>2-6 往上爬</h3>
+        <p>語法：標籤名稱 + <span class="question">^</span> + 標籤名稱 + Tab</p>
+        <p>兩個 ^ 等於往上爬兩次</p>
+        <div class="picture">
+            <img class="gif" src="gif/climb-up.gif" alt="emmet 往上爬">
+        </div>
+        <h3>2-7 群組</h3>
+        <p>語法：<span class="question">( 標籤群組 )</span> + Tab</p>
+        <div class="picture">
+            <img class="gif" src="gif/group.gif" alt="emmet 群組">
+        </div>
+        <h3>2-8 文字</h3>
+        <p>語法：標籤名稱 + <span class="question">{ 文字 }</span> + Tab</p>
+        <div class="picture">
+            <img class="gif" src="gif/text.gif" alt="emmet 文字">
+        </div>
+        <h3>2-9 屬性</h3>
+        <p>語法：標籤名稱 + <span class="question">[屬性名稱=屬性值]</span> + Tab</p>
+        <div class="picture">
+            <img class="gif" src="gif/attritubes.gif" alt="emmet 屬性">
+        </div>
+        <h3>2-10 數字</h3>
+        <p>數字，可加在標籤、類別、識別與文字上</p>
+        <p>語法：<span class="question">$</span> + Tab</p>
+        <div class="picture">
+            <img class="gif" src="gif/number.gif" alt="emmet 數字">
+        </div>
+        <p>指定數字從哪開始</p>
+        <p>語法：<span class="question">$@數字</span> + Tab</p>
+        <div class="picture">
+            <img class="gif" src="gif/number_from.gif" alt="emmet 數字">
+        </div>
+        <p>顛倒</p>
+        <p>語法：<span class="question">$@-數字</span> + Tab</p>
+        <div class="picture">
+            <img class="gif" src="gif/number_back.gif" alt="emmet 數字">
+        </div>
+        <h3>2-11 省略標籤名稱</h3>
+        <p>2-2 介紹：標籤名稱 + .類別名稱 如果標籤名稱省略則預設為 div，但在不同標籤內則有不同預設標籤</p>
+        <p>語法：標籤名稱 > <span class="question">.類別名稱</span> + Tab</p>
+        <div class="picture">
+            <img class="gif" src="gif/skip-tag-name.gif" alt="emmet 省略標籤名稱">
+        </div>
+        <p>也適用於識別名稱</p>
+        <h2>3. CSS 語法</h2>
+        <h3>3-1 數值</h3>
+        <p>語法：屬性 + <span class="question">數值縮寫</span> + Tab</p>
+        <p>百分比<span class="question">p</span></p>
+        <p>em<span class="question">e</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/value.gif" alt="emmet 數值">
+        </div>
+        <h3>3-2 顏色</h3>
+        <p>語法：屬性 + <span class="question">顏色縮寫</span> + Tab</p>
+        <div class="picture">
+            <img class="gif" src="gif/color.gif" alt="emmet 顏色">
+        </div>
+        <h3>3-3 加法</h3>
+        <p>語法：屬性 + 值 + <span class="question">+</span> + 屬性 + 值 + Tab</p>
+        <div class="picture">
+            <img class="gif" src="gif/plus.gif" alt="emmet 加法">
+        </div>
+        <h3>3-4 縮寫</h3>
+        <p>大部分為屬性的第一個字母，例如：顏色為<span class="question">c</span></p>
+        <p>如果遇到有連字號的為兩個單字的第一個字母，例如：背景顏色為<span class="question">bc</span></p>
+        <p>有一些特例，因為屬性有許多很相似的單字，例如：字型尺寸為<span class="question">fz</span></p>
+        <div class="picture">
+            <img class="gif" src="gif/short.gif" alt="emmet 加法">
+        </div>
+        <h2>練習</h2>
+        <p>此單元介紹了 HTML 的基礎以及部分元素，請參考<a href="#" target="_blank">網頁設計 作業 - HTML 外掛 Emmet</a>練習。</p>
+    </div>
+    <footer>KID &copy; 2019</footer>
+</body>
+
+</html>

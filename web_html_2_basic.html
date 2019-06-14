@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>網頁設計 - HTML 基礎</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="main">
+            <h1>網頁設計 - HTML 基礎</h1>
+            <h2>1. 認識表單</h2>
+            <p>
+                表單應用可以說是互動網頁不可或缺的部分，不管是任何型態的網站都可能會用到表單，最常應用於<span class="question">註冊、登入與聯絡頁面</span>。
+            </p>
+            <div class="picture">
+                <img src="pictures/web_form_design_1.png" alt="網頁設計作業參考圖片">
+            </div>
+            <h2>2. 表單語法</h2>
+            <div class="tip">
+                <div>
+                    <div class="blue">&lt;form</div>
+                    <div class="question">表單元素</div>
+                </div>
+                <div>
+                    <div><span class="green">action</span>=<span class="orange">"XXX.php"</span></div>
+                    <div class="question">表單資料傳送頁面</div>
+                </div>
+                <div>
+                    <div class="blue"><span class="green">method</span>=<span class="orange">"get"</span>&gt;</div>
+                    <div class="question">資料傳送方式</div>
+                </div>    
+            </div>
+            <p>注意：所有表單元素都必須放在&lt;form&gt;&lt;/form&gt;內。</p>
+            <h3>2-1 資料傳送方式</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>GET</th>
+                    <th>POST</th>
+                </tr>
+                <tr>
+                    <td>網址</td>
+                    <td>輸入的資料會顯示在網址上，<span class="question">網址會改變</span></td>
+                    <td><span class="question">網址不會改變</span></td>
+                </tr>
+                <tr>
+                    <td>傳遞量</td>
+                    <td>由於是透過網址傳遞，所以<spqn class="question">有長度限制</spqn></td>
+                    <td><span class="question">沒有長度限制</span></td>
+                </tr>
+                <tr>
+                    <td>安全性</td>
+                    <td>內容會顯示在網址上，所以<span class="question">不安全</span></td>
+                    <td>內容不會顯示在網址上，所以比較<span class="question">安全</span></td>
+                </tr>
+            </table>
+            <p>可以到<a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_form_method" target="_blank">W3School GET</a>頁面測試。</p>
+            <h2>3. 表單元素</h2>
+            <p>表單有許多不同的欄位，可以參考<a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank">W3School</a>裡面的表單元素列表。</p>
+            <h3>3-1 輸入元素</h3>
+            <p>
+                輸入元素有多種不同的類型，例如：文字、信箱或密碼等等.. 
+            </p>
+            <p>
+                在<a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank">W3School</a>裡面的<span class="question">type</span>列出了所有的輸入類型。
+            </p>
+            <div class="example">
+                <div class="html">
+                    <span class="blue">
+                        &lt;input 
+                        <span class="green">type</span><span class="white">=</span><span class="orange">"text"</span>
+                        &gt;
+                    </span>
+                </div>
+                <div class="page h1 center">
+                    <input type="text" placeholder="文字類型">
+                </div>
+                <div class="html">
+                    <span class="blue">
+                        &lt;input 
+                        <span class="green">type</span><span class="white">=</span><span class="orange">"password"</span>
+                        &gt;
+                    </span>
+                </div>
+                <div class="page h1 center">
+                    <input type="text" placeholder="＊＊＊＊＊">
+                </div>
+            </div>
+            <p>表單送出後會由後台讀取資料，所以每個表單元素都必須搭配一個<span class="question">name</span>讓後台知道資料名稱。</p>
+            <div class="example">
+                <div class="html">
+                    <span class="blue">
+                        &lt;input 
+                        <span class="green">type</span><span class="white">=</span><span class="orange">"text"</span>
+                        <span class="green">name</span><span class="white">=</span><span class="orange">"user"</span>
+                        &gt;
+                    </span>
+                </div>
+                <div class="page h1 center">
+                    <input type="text" placeholder="文字類型">
+                </div>
+            </div>
+            <p>如果此欄位為必須填寫並且需要檢查，可以加入<span class="question">required</span>讓表單送出時檢查此欄位。</p>
+            <div class="example">
+                <div class="html">
+                    <span class="blue">
+                        &lt;input 
+                        <span class="green">type</span><span class="white">=</span><span class="orange">"text"</span>
+                        <span class="green">name</span><span class="white">=</span><span class="orange">"user"</span>
+                        <span class="green">required</span>
+                        &gt;
+                    </span>
+                </div>
+                <div class="page h1 center">
+                    <input type="text" placeholder="文字類型">
+                </div>
+            </div>
+            <h3>3-2 表單其他元素</h3>
+            <p>參考<a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank">W3School</a>裡面的表單元素列表並實作<a href="https://codepen.io/KID_421/full/aroozJ" target="_blank">表單頁面</a>。</p>
+            <h2>練習</h2>
+            <p>此單元介紹了 HTML 的基礎以及部分元素，請參考<a href="web_homework_html_css_base.html" target="_blank">網頁設計 作業 - HTML 基礎</a>練習。</p>
+        </div>
+        <footer>KID &copy; 2019</footer>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>網頁設計 - CSS 入門</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="main">
+            <h1>網頁設計 - CSS 入門</h1>
+            <h2>1. 認識 HTML 樣式</h2>
+            <p>
+                【樣式】是 HTML 的屬性，使用<span class="question">CSS</span>語言來調整元素的外觀。
+            </p>
+            <div class="tip">
+                <div>
+                    <div class="green">style</div>
+                    <div class="question">樣式</div>
+                </div>
+                <div>
+                    <div>=</div>
+                    <div class="question">指定為</div>
+                </div>
+                <div>
+                    <div class="orange">"color : gray;"</div>
+                    <div class="question">"屬性 : 值;"</div>
+                </div>    
+            </div>
+            <h3>2-1 範例</h3>
+            <p>
+                CSS 定義了許多屬性來呈現不同的的外觀，可以到<a href="https://www.w3schools.com/cssref/default.asp" target="_blank">W3School</a>官方文件查找。
+            </p>            
+            <p>範例使用<span class="question">顏色屬性</span>將標題改為灰色，此方式稱為<span class="question">行內 CSS</span>。</p>
+            <div class="example">
+                <div class="html">
+                    <span class="blue">&lt;h1 <span class="green">style</span><span class="white">=</span><span class="orange">"color:gray;"</span>&gt;</span>
+                    <span class="white">標題</span>
+                    <span class="blue">&lt;/h1&gt;</span>
+                </div>
+                <div class="page h1 gray">
+                    標題
+                </div>
+            </div>
+            <h3>2-2 多個屬性</h3>
+            <p>
+                樣式內可以定義多個屬性，記得使用<span class="question">分號</span>區隔開。
+            </p>            
+            <div class="example">
+                <div class="html">
+                    <span class="blue">&lt;h1 <span class="green">style</span><span class="white">=</span><span class="orange">"color:gray; font-size: 20px;"</span>&gt;</span>
+                    <span class="white">標題</span>
+                    <span class="blue">&lt;/h1&gt;</span>
+                </div>
+                <div class="page h1 gray font-size-20">
+                    標題
+                </div>
+            </div>
+            <h2>3. 外部 CSS</h2>
+            <p>在每個元素內加上樣式修改外觀雖然非常方便，但如果需要同時修改數量龐大的元素可是相對地耗時並且難以維護，考慮到<span class="question">維護性</span>因此出現了<span class="question">外部 CSS</span>的寫法。</p>
+            <div class="tip">
+                <div class="width-18">
+                    <div class="blue">h1</div>
+                    <div class="question">選取器</div>    
+                </div>
+                <div class="width-18">
+                    <div><span class="white">{</span></div>
+                    <div class="question">開始括號</div>
+                </div>
+                <div class="width-18"></div>
+                <div class="width-18"></div>                
+                <div class="width-18"></div><br><br>
+                <div class="width-18"></div>
+                <div class="width-18">
+                    <div class="purple">color</div>
+                    <div class="question">屬性</div>
+                </div>  
+                <div class="width-18">
+                    <div class="white">:</div>
+                    <div class="question">為</div>
+                </div> 
+                <div class="width-18">
+                    <div class="blue">gray</div>
+                    <div class="question">值</div>
+                </div> 
+                <div class="width-18">
+                    <div class="white">;</div>
+                    <div class="question">結束</div>
+                </div><br><br>
+                <div class="width-18">
+                    <div class="white">}</div>
+                    <div class="question">結束括號</div>
+                </div>  
+                <div class="width-18"></div> 
+                <div class="width-18"></div> 
+                <div class="width-18"></div> 
+                <div class="width-18"></div> 
+            </div>
+            <p>選取器用來告訴瀏覽器怎麼搜尋到想修改的元素，官方定義了許多搜尋元素的方式，可以到<a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">W3School</a>官方文件查找。</p>
+            <h3>3-1 範例</h3>
+            <p>範例告訴瀏覽器要搜尋所有的 h1 並且利用顏色以及字體大小屬性將元素內容文字改為灰色並縮小字體大小。</p>
+            <div class="example">
+                <div class="html">
+                    <span class="blue">&lt;h1&gt;</span>
+                    <span class="white">我是標題一</span>
+                    <span class="blue">&lt;/h1&gt;</span>
+                </div>
+                <div class="page h1 gray font-size-20">我是標題一</div>
+                <div class="html">
+                    <span class="blue">&lt;h1&gt;</span>
+                    <span class="white">我是標題一</span>
+                    <span class="blue">&lt;/h1&gt;</span>
+                </div>
+                <div class="page h1 gray font-size-20">我是標題一</div>
+                <div class="css">
+                    <div class="css-title">CSS</div>
+                    <span class="blue">h1</span> <span class="white">{</span><br>
+                    <span class="indent"></span><span class="purple">color</span><span class="white">:</span>
+                    <span class="blue">gray</span><span class="white">;</span><br>
+                    <span class="indent"></span><span class="purple">font-size</span><span class="white">:</span>
+                    <span class="orange">20px</span><span class="white">;</span><br>
+                    <span class="white">}</span>
+                </div>
+            </div>
+            <h2>練習</h2>
+            <p>此單元介紹了 CSS 的基礎以及部分屬性，請參考<a href="web_homework_html_css_started.html" target="_blank">網頁設計 作業 - CSS 入門</a>練習。</p>
+        </div>
+        <footer>KID &copy; 2019</footer>
+    </body>
+</html>
