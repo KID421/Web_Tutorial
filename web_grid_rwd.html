@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁設計 - 格線與 RWD</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>網頁設計 - 格線與 RWD</h1>
+        <h2>一、格線</h2>
+        <h2>1. 什麼是格線？</h2>
+        <p>格線是由<span class="question">行 (Row)</span>與<span class="question">列 (Column)</span>組合而成的線條，可用於佈置網頁頁面。</p>
+        <p>目前大部分的瀏覽器已經支援格線，可以到<a href="https://caniuse.com/#search=grid" target="_blank">Can I Use</a>查詢。</p>
+        <p class="link"><a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">官方文件：傳送門</a></p>
+        <p class="link"><a href="https://developer.mozilla.org/zh-TW/docs/Web/CSS/CSS_Grid_Layout" target="_blank">MDN
+                文件：傳送門</a></p>
+        <h2>2. 格線容器</h2>
+        <p>用來裝所有行與列的容器，會宣告為<span class="question">display: grid;</span></p>
+        <div class="example">
+            <iframe height="299" style="width: 100%;" scrolling="no" title="格線 - 容器"
+                src="//codepen.io/KID_421/embed/wLKRjp/?height=299&theme-id=dark&default-tab=html,result"
+                frameborder="no" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/KID_421/pen/wLKRjp/'>格線 - 容器</a> by KID
+                (<a href='https://codepen.io/KID_421'>@KID_421</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+        </div>
+        <h2>3. 欄位與間隙</h2>
+        <p>容器可以設定需要幾個欄位，可以使用任何單位，也可以使用<span class="question">auto 自動</span>調整。</p>
+        <p>使用<span class="question">grid-gap</span>可以設定間隙，分別為上下、左右間隙。</p>
+        <div class="example">
+            <iframe height="265" style="width: 100%;" scrolling="no" title="格線 - 欄"
+                src="//codepen.io/KID_421/embed/RzWvgM/?height=265&theme-id=0&default-tab=css,result" frameborder="no"
+                allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/KID_421/pen/RzWvgM/'>格線 - 欄</a> by KID
+                (<a href='https://codepen.io/KID_421'>@KID_421</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+        </div>
+        <h2>二、RWD</h2>
+        <h2>1. 什麼是 RWD？</h2>
+        <p><span class="question">響應式網頁設計</span>簡稱 RWD(Responsive Web Design)，主要是利用 CSS<span class="question">判斷使用者的螢幕尺寸</span>並改變網頁內容。</p>
+        <p class="link"><a href="https://colorlib.com/preview/#miners" target="_blank">範例：DEMO</a></p>
+    </div>
+    <footer>KID &copy; 2019</footer>
+</body>
+
+</html>

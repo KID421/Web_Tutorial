@@ -69,6 +69,13 @@ h3 {
     width: 90%;
     box-shadow: 0 0 10px black;
 }
+.link {
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    margin: 5px 30px;
+    padding: 10px;
+    border-radius: 3px;
+    color: deepskyblue;
+}
 video {
     width: 90%;
     box-shadow: 0 0 10px black;
@@ -260,7 +267,7 @@ input:hover {
         font-size: 16px;
     }
     .question {
-        color: transparent;
+        color: transparent !important;
         border-bottom: 1px solid black;
     }
     .html * {
@@ -278,5 +285,8 @@ input:hover {
     }
     table, th, td {
         border: 1px solid black;
+    }
+    .example iframe {
+        display: none;
     }
 }
