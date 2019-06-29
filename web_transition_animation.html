@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁設計 - 轉場與動畫</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>網頁設計 - 轉場與動畫</h1>
+        <h2>一、轉場與動畫的差異</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>轉場</th>
+                <th>動畫</th>
+            </tr>
+            <tr>
+                <td>名稱</td>
+                <td><span class="question">transition</span></td>
+                <td><span class="question">animation</span></td>
+            </tr>
+            <tr>
+                <td>觸發</td>
+                <td><span class="question">需要觸發</span>例如：滑入 :hover、點擊 click</td>
+                <td><span class="question">不需要觸發</span></td>
+            </tr>
+            <tr>
+                <td>時間</td>
+                <td><span class="question">只能定義開始與結束</span></td>
+                <td><span class="question">可自行設定不同時間點</span></td>
+            </tr>
+            <tr>
+                <td>次數</td>
+                <td><span class="question">一次性</span></td>
+                <td><span class="question">可自行設定</span></td>
+            </tr>
+        </table>
+        <br>
+        <div class="link"><a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank">轉場官方文件：傳送門</a>
+        </div>
+        <div class="link"><a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">動畫官方文件：傳送門</a>
+        </div>
+        <h2>二、轉場</h2>
+        <h3>屬性：</h3>
+        <p>轉場屬性 - <span class="question">transition-property</span></p>
+        <p>轉場時間 - <span class="question">transition-duration</span></p>
+        <p>轉場緩動 - <span class="question">transition-timing-function</span></p>
+        <p>轉場延遲 - <span class="question">transition-delay</span></p>
+        <h3>縮寫：</h3>
+        <p>transition: <span class="question">屬性 時間 緩動 延遲</span></p>
+        <div class="link"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
+                target="_blank">支援轉場與動畫的屬性：MDN</a></div>
+        <h3>範例：</h3>
+        <div class="example">
+            <iframe height="320" style="width: 100%;" scrolling="no" title="轉場 - 範例"
+                src="//codepen.io/KID_421/embed/GbyYMj/?height=320&theme-id=0&default-tab=css,result" frameborder="no"
+                allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/KID_421/pen/GbyYMj/'>轉場 - 範例</a> by KID
+                (<a href='https://codepen.io/KID_421'>@KID_421</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+        </div>
+        <h2>三、動畫</h2>
+        <h3>屬性：</h3>
+        <p>關鍵影格 - <span class="question">@keyframes 名稱</span></p>
+        <p>動畫名稱 - <span class="question">animation-name</span></p>
+        <p>動畫時間 - <span class="question">animation-duration</span></p>
+        <p>動畫緩動 - <span class="question">animation-timing-function</span></p>
+        <p>動畫延遲 - <span class="question">animation-delay</span></p>
+        <p>動畫次數 - <span class="question">animation-iteration-count</span></p>
+        <p>動畫方向 - <span class="question">animation-direction</span></p>
+        <p>動畫開始結束模式 - <span class="question">animation-fill-mode</span></p>
+        <p>動畫播放狀態 - <span class="question">animation-play-state</span></p>
+        <h3>縮寫：</h3>
+        <p>animation: <span class="question">名稱 時間 緩動 延遲 次數 方向 開始結束模式 播放狀態</span></p>
+        <h3>範例：</h3>
+        <div class="example">
+            <iframe height="352" style="width: 100%;" scrolling="no" title="動畫 - 範例"
+                src="//codepen.io/KID_421/embed/xopyjv/?height=352&theme-id=0&default-tab=css,result" frameborder="no"
+                allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/KID_421/pen/xopyjv/'>動畫 - 範例</a> by KID
+                (<a href='https://codepen.io/KID_421'>@KID_421</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+        </div>
+    </div>
+    <footer>KID &copy; 2019</footer>
+</body>
+
+</html>

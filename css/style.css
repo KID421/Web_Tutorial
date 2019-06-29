@@ -139,6 +139,7 @@ input:hover {
     font-weight: 900;
     border-bottom: 1px solid gold;
     font-size: 20px;
+    line-height: 40px;
 }
 .question:hover {
     border-bottom: 1px solid deepskyblue !important;
