@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁設計 - CSS 擴充 Sass</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>網頁設計 - CSS 擴充 Sass</h1>
+        <h2>一、認識 Sass</h2>
+        <p>Sass (Syntactically Awesome StyleSheets) 是 CSS 的<span
+                class="question">擴充</span>讓開發者可以撰寫更簡潔、富語意、重複性佳、可維護性和可延展性佳的 CSS 程式碼。</p>
+        <div class="link"><a href="https://sass-lang.com/" target="_blank">SASS 官方文件</a></div>
+        <div class="link"><a href="https://www.w3schools.com/sass/" target="_blank">SASS W3School 文件</a></div>
+        <h2>二、安裝 Sass</h2>
+        <p>延伸模組內搜尋 Sass 並且安裝，此模組會將 Sass 加上顏色辨識。</p>
+        <div class="picture">
+            <img src="pictures/sass.png" alt="sass">
+        </div>
+        <p>延伸模組內搜尋 Live Sass Compiler 並且安裝，安裝完要重新啟動 VSCode，此模組提供將 Sass 轉譯為 CSS 的功能。</p>
+        <div class="picture">
+            <img src="pictures/live_sass.png" alt="sass">
+        </div>
+        <h2>三、使用 Sass</h2>
+        <p>Sass 分兩種不同的寫法，第一種副檔名為<span class="question">sass</span>，第二種副檔名為<span
+                class="question">scss</span>，在此教學中會使用第二種寫法，可以參考 <a
+                href="https://riptutorial.com/zh-TW/sass/example/30698/scss%E8%88%87sass%E7%9A%84%E6%AF%94%E8%BC%83"
+                target="_blank">Sass 與 Scss 差異</a>介紹兩者的不同之處。</p>
+        <p>首先建立一個檔案副檔名使用 scss ，在此檔案下方點選<span class="question">Watch Sass</span>自動轉譯成 css 檔。</p>
+        <div class="picture">
+            <img src="pictures/watch_sass.png" alt="sass">
+        </div>
+        <h3>3-1 變數 variable</h3>
+        <p>變數用於儲存資料，可以儲存顏色、尺寸、字型等等任何資料。</p>
+        <div class="example">
+            <iframe height="400" style="width: 100%;" scrolling="no" title="SASS - 變數"
+                src="//codepen.io/KID_421/embed/XLQGWY/?height=400&theme-id=0&default-tab=css,result" frameborder="no"
+                allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/KID_421/pen/XLQGWY/'>SASS - 變數</a> by KID
+                (<a href='https://codepen.io/KID_421'>@KID_421</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+        </div>
+        <div class="link"><a href="https://www.w3schools.com/sass/sass_variables.asp" target="_blank">W3School 說明</a>
+        </div>
+        <h3>3-2 巢狀 nesting</h3>
+        <p>可以使用巢狀避免選取器過長的問題。</p>
+        <div class="example">
+            <iframe height="382" style="width: 100%;" scrolling="no" title="SASS - 巢狀"
+                src="//codepen.io/KID_421/embed/orOVXR/?height=382&theme-id=0&default-tab=css,result" frameborder="no"
+                allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/KID_421/pen/orOVXR/'>SASS - 巢狀</a> by KID
+                (<a href='https://codepen.io/KID_421'>@KID_421</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+        </div>
+        <p>巢狀也可以使用在屬性上。</p>
+        <div class="example">
+            <iframe height="243" style="width: 100%;" scrolling="no" title="SASS - 巢狀屬性"
+                src="//codepen.io/KID_421/embed/NZmJxp/?height=243&theme-id=0&default-tab=css,result" frameborder="no"
+                allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/KID_421/pen/NZmJxp/'>SASS - 巢狀屬性</a> by KID
+                (<a href='https://codepen.io/KID_421'>@KID_421</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+        </div>
+        <h3>3-3 匯入 import</h3>
+        <p>可以使用<span class="question">@import</span>匯入其他的 css 檔。</p>
+        <div class="example">
+            <iframe height="194" style="width: 100%;" scrolling="no" title="SASS - 匯入"
+                src="//codepen.io/KID_421/embed/EBJMKO/?height=194&theme-id=0&default-tab=css,result" frameborder="no"
+                allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/KID_421/pen/EBJMKO/'>SASS - 匯入</a> by KID
+                (<a href='https://codepen.io/KID_421'>@KID_421</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+        </div>
+        <h3>3-4 混入 mixin</h3>
+        <p>與 pug 相同，可以使用混入，注意要使用混入時必須搭配關鍵字<span class="question">@include</span>才可以。</p>
+        <div class="example">
+            <iframe height="347" style="width: 100%;" scrolling="no" title="SASS - 混入 mixin"
+                src="//codepen.io/KID_421/embed/agxMZP/?height=347&theme-id=0&default-tab=css,result" frameborder="no"
+                allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/KID_421/pen/agxMZP/'>SASS - 混入 mixin</a> by KID
+                (<a href='https://codepen.io/KID_421'>@KID_421</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+        </div>
+        <h3>3-5 擴展 extend</h3>
+        <p>擴展，可以讓選取器繼承其他選取器內的所有屬性與值。</p>
+        <div class="example">
+            <iframe height="349" style="width: 100%;" scrolling="no" title="SASS - 擴展 extend"
+                src="//codepen.io/KID_421/embed/XLQGNx/?height=349&theme-id=0&default-tab=css,result" frameborder="no"
+                allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/KID_421/pen/XLQGNx/'>SASS - 擴展 extend</a> by KID
+                (<a href='https://codepen.io/KID_421'>@KID_421</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+        </div>
+        <h3>3-6 運算 operators</h3>
+        <p>可以使用運算符號<span class="question">加 +、減 -、乘 *、除 /、餘 %</span>這五種運算符號幫助運算。</p>
+        <div class="link"><a href="http://sass.bootcss.com/docs/sass-reference/#yun-suan" target="_blank">Sass 官方文件</a></div>
+        <div class="example">
+            <iframe height="329" style="width: 100%;" scrolling="no" title="SASS - 運算 operators"
+                src="//codepen.io/KID_421/embed/wLZOJJ/?height=329&theme-id=0&default-tab=css,result" frameborder="no"
+                allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/KID_421/pen/wLZOJJ/'>SASS - 運算 operators</a> by KID
+                (<a href='https://codepen.io/KID_421'>@KID_421</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+        </div>
+    </div>
+    <footer>KID &copy; 2019</footer>
+</body>
+
+</html>

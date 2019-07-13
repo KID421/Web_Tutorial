@@ -55,9 +55,11 @@ h1 {
 }
 h2 {
     padding: 10px;
+    padding-left: 30px;
 }
 h3 {
     padding: 10px;
+    padding-left: 30px;
 }
 .video {
     text-align: center;
@@ -95,7 +97,7 @@ p {
 footer {
     width: 90%;
     max-width: 1280px;
-    margin:  0 auto;
+    margin: 0 auto;
     height: 180px;
     line-height: 180px;
     text-align: center;
